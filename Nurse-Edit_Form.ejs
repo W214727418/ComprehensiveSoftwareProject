@@ -1,0 +1,56 @@
+<!-- edit-device.ejs view
+DO NOT ALTER THIS CODE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registry</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/registry" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" required>
+        <br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" required>
+        <br>
+        <label for="sex">Sex</label>
+        <input type="text" name="sex" required>
+        <br>
+        <label for="gender">Gender</label>
+        <input type="text" name="gender" required>
+        <br>
+        <label for="race">Race</label>
+        <input type="text" name="race" required>
+        <br>
+        <label for="hispanic">Are you of Latin, South American, or Hispanic origin?</label>
+        <input type="checkbox" name="hispanic" required>
+        <br>
+        <label for="weight">Weight</label>
+        <input type="text" name="weight" required>
+        <br>
+        <label for="height">Height</label>
+        <input type="text" name="height" required>
+        <br>
+        <label for="visit">Reason for Visit</label>
+        <input type="text" name="visit" required>
+        <br>
+        <label for="license">Drivers License</label>
+        <input type="text" name="license" required>
+        <br>
+        <label for="physician">Primary Physician</label>
+        <input type="text" name="physician" required>
+        <br>
+        <label for="insurance">Insurance</label>
+        <input type="text" name="insurance" required>
+        <br>
+        <label for="secinsurance">Secondary Insurance</label>
+        <input type="text" name="secinsurance" >
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
