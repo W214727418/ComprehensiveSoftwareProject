@@ -4,24 +4,24 @@
         <title>Patient Form</title>
     </head>
     <body>
-        <form action="/formsubmit" method="POST">
+        <form action="/formsubmit" method="GET">
             <label for="name">Name</label>
-            <input type="text" name="name" required>
+            <input type="text" name="name" value="fuck youself" required>
             <br>
             <label for="dob">Date of Birth</label>
-            <input type="date" name="dob" required>
+            <input type="date" name="dob" value="10-21-2020" >
             <br>
             <label for="sex">Sex</label>
-            <input type="text" name="sex" required>
+            <input type="text" name="sex" value="male"  required>
             <br>
             <label for="gender">Gender</label>
-            <input type="text" name="gender" required>
+            <input type="text" name="gender" value="male" required>
             <br>
             <label for="race">Race</label>
-            <input type="text" name="race" required>
+            <input type="text" name="race" value="african" required>
             <br>
             <label for="hispanic">Are you of Latin, South American, or Hispanic origin?</label>
-            <input type="checkbox" name="hispanic" required>
+            <input type="checkbox" name="hispanic">
             <br>
             <button type="submit">Submit</button>
         </form>
