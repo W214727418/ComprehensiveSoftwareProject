@@ -1,0 +1,63 @@
+<!-- edit-device.ejs view
+DO NOT ALTER THIS CODE
+-->
+
+<!--I swear to God if this code breaks for no fucking reason agains I'm going to make sure that it wakes up with all of its holes a bit larger-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registry</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+    <form action="/registry" method="POST">
+        <label for="name">Name</label> 
+        <input type="text" name="name" value="<%= name %>" required>
+        <br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" value="<%= dob %>" required>
+        <br>
+        <label for="sex">Sex</label>
+        <input type="text" name="sex" value="<%= sex %>" required>
+        <br>
+        <label for="gender">Gender</label>
+        <input type="text" name="gender" value="<%= gender %>" required>
+        <br>
+        <label for="race">Race</label>
+        <input type="text" name="race" value="<%= race %>" required>
+        <br>
+            <label for="hispanic">Are you of Latin, South American, or Hispanic origin?</label>
+            <input type="checkbox" name="hispanic" <%= hispanic ? "checked" : "" %>> 
+            <!--NOTE FOR FUTURE SELF: TO SEND THE CHECKED STATUS OF ONE CHECKBOX TO ANOTHER, USE TERTIARY CONDITIONAL-->
+        <br>
+        <label for="weight">Weight</label> <!--if(patientChecker === true) input patient.weight-->
+        <input type="text" name="weight" value="<%= weight %>" required>
+        <br>
+        <label for="height">Height</label>
+        <input type="text" name="height" value="<%= height %>" required>
+        <br>
+        <label for="visit">Reason for Visit</label>
+        <input type="text" name="visit" value="<%= visit %>" required>
+        <br>
+        <label for="license">Drivers License</label>
+        <input type="checkbox" name="license" <%= license ? "checked" : '' %>>
+        <br>
+        <label for="physician">Primary Physician</label>
+        <input type="text" name="physician" value="<%= physician %>" required>
+        <br>
+        <label for="insurance">Insurance</label>
+        <input type="text" name="insurance" value="<%= insurance %>" required>
+        <br>
+        <label for="secinsurance">Secondary Insurance</label>
+        <input type="text" name="secinsurance" value="<%= secinsurance %>">
+        <br>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+    <h2 id="h2"><%= updateText %></h2>
+    <a href="/">Back To Patient Form</a>
+</div>
+</body>
+</html>
